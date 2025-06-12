@@ -27,7 +27,7 @@ const CustomHeader = () => {
           <h1 className="text-4xl md:text-[2.5rem] lg:text-6xl font-semibold text-center md:text-left ">
             High Quality NFT Collection
           </h1>
-          <p className="text-black/30 text-[20px] text-center md:text-left">
+          <p className="text-black/30 text-[15px] md:text-[20px] text-center md:text-left">
             A 890 piece custom{" "}
             <span className="orbitron bg-gradient-to-r from-indigo-500 to-pink-500 bg-clip-text text-transparent mr-2">
               Nfthub's
