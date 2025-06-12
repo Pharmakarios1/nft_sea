@@ -21,7 +21,7 @@ const CustomHeader = () => {
     nft3: "w-16 h-16 absolute top-0 left-0 w-44 h-44 object-cover rounded-lg shadow-lg skew-5 translate-y-10",
   };
   return (
-    <div className="w-full h-screen bg-gradient-to-r from-red-100 to-sky-200">
+    <div className="w-full lg:h-screen bg-gradient-to-r from-red-100 to-sky-200">
       <div className="w-[70%] md:w-[90%] lg:w-[70%] h-[100%] pt-28 mx-auto grid md:grid-cols-2 ">
         <div className="h-full flex flex-col gap-5">
           <h1 className="text-4xl md:text-[2.5rem] lg:text-6xl font-semibold ">
