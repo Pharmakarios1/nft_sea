@@ -47,7 +47,7 @@ const CustomHeader = () => {
           <img
             src="/nft.avif"
             alt=""
-            className={mobileMenu ? "" : imgStyles.nft1}
+            className={mobileMenu ? "hidden" : imgStyles.nft1}
           />
           <img
             src="/nft1.jpg"
