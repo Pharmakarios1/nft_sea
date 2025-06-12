@@ -1,4 +1,4 @@
-import { Dribbble, Facebook, Instagram, Twitter, X } from "lucide-react";
+import { Dribbble, Facebook, Instagram, Twitter } from "lucide-react";
 
 const DeskTop = () => {
   return (
