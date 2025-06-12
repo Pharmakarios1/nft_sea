@@ -2,7 +2,7 @@ import { Dribbble, Facebook, Instagram, Twitter } from "lucide-react";
 
 const DeskTop = () => {
   return (
-    <div className="hidden md:block w-[70%] md:w-[90%] lg:w-[70%] mx-auto h-[60px]">
+    <div className="hidden md:block w-[90%] lg:w-[80%] mx-auto h-[60px]">
       <div className="flex items-center justify-between h-[100%] font-bold">
         <h2 className="text-2xl orbitron">NFThub</h2>
 

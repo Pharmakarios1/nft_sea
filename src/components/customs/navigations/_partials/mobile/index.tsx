@@ -1,9 +1,9 @@
 const MobileNav = () => {
   return (
     <div
-      className={`md:hidden relative bg-gradient-to-r from-red-200 w-full h-[80px]  to-fuchsia-200 `}
+      className={`md:hidden relative border-gradient-to-r from-red-200 w-full h-[80px]  to-fuchsia-200 `}
     >
-      <div className="flex h-[100%] items-center "> hello</div>
+      <div className="orbitron text-3xl p-4 flex justify-between"> nercko <span> nfthub</span></div>
     </div>
   );
 };
