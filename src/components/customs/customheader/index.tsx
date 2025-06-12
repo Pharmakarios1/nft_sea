@@ -24,6 +24,12 @@ const CustomHeader = () => {
           </p>
           <div className="flex justify-center md:justify-start gap-4">
             <Button
+              onClick={() =>
+                window.open(
+                  "https://opensea.io/collection/nfthub-collection",
+                  "_blank"
+                )
+              }
               variant="secondary"
               className="w-40 text-white rounded-full bg-gradient-to-r from-indigo-800 to-pink-500 cursor-pointer"
             >
