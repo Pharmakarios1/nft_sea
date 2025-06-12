@@ -7,3 +7,11 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.scroll {
+  overflow: auto;
+  scrollbar-width: none;
+}
+.scroll::-webkit-scrollbar {
+  display: none;
+}

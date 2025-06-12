@@ -1,20 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { useEffect, useState } from "react";
 import { MdArrowOutward } from "react-icons/md";
+import HeroMobileNft from "./_partials";
 
 const CustomHeader = () => {
-  const [mobileMenu, setMobileMenu] = useState(true);
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth > 768) {
-        setMobileMenu(false);
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   const imgStyles = {
     nft1: " hidden md:block w-16 h-16 absolute top-0 right-0 w-44 h-44 object-cover rounded-lg shadow-lg transform -rotate-0 -translate-y-30 lg:-translate-y-15",
     nft2: "hidden md:block w-16 h-16 absolute bottom-40 right-0 w-44 h-44 object-cover rounded-lg shadow-lg transform rotate-0 md:translate-y-30",
@@ -44,21 +32,10 @@ const CustomHeader = () => {
           </div>
         </div>
         <div className="relative flex">
-          <img
-            src="/nft.avif"
-            alt=""
-            className={mobileMenu ? "hidden" : imgStyles.nft1}
-          />
-          <img
-            src="/nft1.jpg"
-            alt=""
-            className={mobileMenu ? "hidden" : imgStyles.nft2}
-          />
-          <img
-            src="/ape.webp"
-            alt=""
-            className={mobileMenu ? "hidden" : imgStyles.nft3}
-          />
+          <HeroMobileNft />
+          <img src="/nft.avif" alt="" className={imgStyles.nft1} />
+          <img src="/nft1.jpg" alt="" className={imgStyles.nft2} />
+          <img src="/ape.webp" alt="" className={imgStyles.nft3} />
         </div>
       </div>
     </div>

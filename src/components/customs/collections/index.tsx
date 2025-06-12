@@ -1,8 +1,10 @@
 const NftCollection = () => {
   return (
     <div>
-      <h1 className="text-4xl font-bold text-center my-8">NFT Collection</h1>
-      <p className="text-center text-lg mb-4">
+      <h1 className=" orbitron text-4xl font-bold text-center my-6 text-transparent bg-clip-text bg-gradient-to-t from-indigo-600 to-pink-900">
+        NFT Collection
+      </h1>
+      <p className="text-center text-md mb-4">
         Explore our exclusive NFT collection featuring unique digital assets.
       </p>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-4">

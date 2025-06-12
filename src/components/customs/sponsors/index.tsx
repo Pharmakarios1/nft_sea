@@ -6,35 +6,56 @@ import { GiZebraShield } from "react-icons/gi";
 import { SiBinance, SiCypress, SiTradingview } from "react-icons/si";
 
 const Sponsors = () => {
+  const sponsors = [
+    {
+      icon: <BiTag className="text-slate-900 font-bold text-xl" />,
+      name: "Bitget",
+    },
+    {
+      icon: <BitcoinIcon className="text-orange-400" />,
+      name: "Bitcoin",
+    },
+    {
+      icon: <FaMeta className="text-blue-500" />,
+      name: "Meta",
+    },
+    {
+      icon: <Gpu className="text-green-500" />,
+      name: "GPT",
+    },
+    {
+      icon: <SiCypress className="text-cyan-500" />,
+      name: "Cyprex",
+    },
+    {
+      icon: <GiZebraShield className="text-indigo-600" />,
+      name: "Shield",
+    },
+    {
+      icon: <SiBinance className="text-yellow-500" />,
+      name: "Binance",
+    },
+    {
+      icon: "",
+      name: "CoinBase",
+    },
+    {
+      icon: <SiTradingview className="text-24" />,
+      name: "Tradingview",
+    },
+  ];
   return (
-    <div className="w-full h-[40px] flex items-center justify-between  px-4 overflow-x-hidden">
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <BiTag className="text-slate-900 font-bold text-2xl" /> <p>Bitget</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <BitcoinIcon className="text-orange-400" /> <p>Bitcoin</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <FaMeta className="text-blue-500" /> <p>Meta</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <Gpu className="text-green-500" /> <p>GPT-4</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <SiCypress className="text-cyan-500" /> <p>Cyprex</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <GiZebraShield className="text-indigo-600" /> <p>Shield</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <p className="text-slate-950">CoinBase</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <SiBinance className="text-yellow-500" /> <p>Binance</p>
-      </span>
-      <span className="flex items-center gap-2 text-sm font-semibold">
-        <SiTradingview className="text-24" /> <p>TradingView</p>
-      </span>
+    <div className="w-full h-[60px] flex items-center justify-between gap-10 px-4 scroll ">
+      {sponsors.map((sponsor) => {
+        return (
+          <div key={sponsor.name} className="flex items-center justify-center ">
+            {sponsor.icon}
+            <p className="bg-gradient-to-r from-red-300 to-sky-400 bg-clip-text text-transparent font-semibold">
+              {sponsor.name}
+            </p>
+          </div>
+        );
+      })}
     </div>
   );
 };

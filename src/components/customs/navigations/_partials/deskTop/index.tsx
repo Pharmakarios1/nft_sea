@@ -1,12 +1,13 @@
-import { Dribbble, Facebook, Instagram, Twitter } from "lucide-react";
+import { CiInstagram } from "react-icons/ci";
+import { FaDiscord, FaDribbble, FaTwitter } from "react-icons/fa6";
 
 const DeskTop = () => {
   return (
     <div className="hidden md:block w-[90%] lg:w-[80%] mx-auto h-[60px]">
-      <div className="flex items-center justify-between h-[100%] font-bold">
+      <div className="flex items-center justify-between h-[100%] ">
         <h2 className="text-2xl orbitron">NFThub</h2>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-4 font-bold">
           <a href="/">Home</a>
           <a href="/collection">Collection</a>
           <a href="/choose">Choose</a>
@@ -15,17 +16,17 @@ const DeskTop = () => {
           <a href="/blog">Blog</a>
         </div>
         <div className="flex items-center gap-4">
-          <a href="/login">
-            <Twitter />
+          <a href="/twitter">
+            <FaTwitter className="text-sky-400" />
           </a>
-          <a href="/login">
-            <Facebook />
+          <a href="/discord " className="text-blue-700">
+            <FaDiscord />
           </a>
-          <a href="/signup">
-            <Instagram />
+          <a href="/instagram">
+            <CiInstagram className="bg-gradient-to-t from-indigo-800 to-pink-500 " />
           </a>
-          <a href="/signup">
-            <Dribbble />
+          <a href="/dribbble">
+            <FaDribbble  className="text-pink-500"/>
           </a>
         </div>
       </div>
