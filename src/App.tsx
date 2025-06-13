@@ -4,6 +4,7 @@ import CustomHeader from "./components/customs/customheader";
 import Navigation from "./components/customs/navigations";
 import Sponsors from "./components/customs/sponsors";
 import { LazyMotion, domAnimation,motion } from "framer-motion";
+import WhyChooseUs from "./components/customs/whyChooseUs";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <CustomHeader />
       <Sponsors />
       <NftCollection />
+      <WhyChooseUs />
       </motion.div>
     </LazyMotion>
   );
