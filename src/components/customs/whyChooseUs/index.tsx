@@ -8,8 +8,8 @@ import { TbBuildingCommunity } from "react-icons/tb";
 const WhyChooseUs = () => {
   return (
     <div>
-      <section className="w-[95%] md:w-[90%] mx-auto">
-        <div className="container py-12 md:py-24">
+      <section className="container w-[95%] sm:w-[70%] md:w-[90%] mx-auto">
+        <div className="py-12 md:py-24">
           <h2 className="text-xl md:text-4xl text-center font-bold mb-8">
             Why{" "}
             <span className="bg-gradient-to-r from-indigo-700 to-pink-500 bg-clip-text text-transparent">
@@ -25,17 +25,19 @@ const WhyChooseUs = () => {
             <CustomCardItem
               title="High Quality"
               description="We prioritize quality in every project, ensuring top-notch results."
-              icon={<MdHighQuality className="text-4xl  text-indigo-400/65"/>}
+              icon={<MdHighQuality className="text-4xl  text-indigo-400/65" />}
             />
             <CustomCardItem
               title="Top Resources"
               description="Access a curated selection of the best tools and materials."
-              icon={<GrResources className="text-4xl  text-slate-600/65"/>}
+              icon={<GrResources className="text-4xl  text-slate-600/65" />}
             />
             <CustomCardItem
               title="Big Community"
               description="Join a thriving community of like-minded individuals."
-              icon={<TbBuildingCommunity className="text-4xl  text-emerald-800/65"/>}
+              icon={
+                <TbBuildingCommunity className="text-4xl  text-emerald-800/65" />
+              }
             />
           </CustomCard>
         </div>
