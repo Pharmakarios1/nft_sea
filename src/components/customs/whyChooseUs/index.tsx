@@ -8,7 +8,7 @@ import { TbBuildingCommunity } from "react-icons/tb";
 const WhyChooseUs = () => {
   return (
     <div>
-      <section className="w-[80%] md:w-[80%] mx-auto">
+      <section className="w-[95%] md:w-[80%] mx-auto">
         <div className="container py-12 md:py-24">
           <h2 className="text-xl md:text-4xl text-center font-bold mb-8">
             Why{" "}
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
               Choose Us?
             </span>
           </h2>
-          <CustomCard className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 place-items-center ">
+          <CustomCard className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 place-items-center gap-2  ">
             <CustomCardItem
               title="Huge collection"
               description="Explore our vast library of resources."
