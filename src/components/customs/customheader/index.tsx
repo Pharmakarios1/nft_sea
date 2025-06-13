@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { MdArrowOutward } from "react-icons/md";
 import HeroMobileNft from "./_partials";
+import { m } from "framer-motion";
 
 const CustomHeader = () => {
   const imgStyles = {
@@ -11,7 +12,7 @@ const CustomHeader = () => {
   return (
     <div className="w-full lg:h-screen bg-gradient-to-r from-red-100 to-sky-200 py-10">
       <div className="w-[90%]  lg:w-[80%] h-[100%] pt-10 md:pt-20 mx-auto grid md:grid-cols-2 ">
-        <div className="h-full flex flex-col gap-5">
+        <m.div initial={{ opacity: 0, scale: 0.5 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }} className="h-full flex flex-col gap-5">
           <h1 className="text-4xl md:text-[2.5rem] lg:text-6xl font-semibold text-center md:text-left ">
             High Quality NFT Collection
           </h1>
@@ -36,13 +37,13 @@ const CustomHeader = () => {
               view in OPENSEA <MdArrowOutward />
             </Button>
           </div>
-        </div>
-        <div className="relative flex">
+        </m.div>
+        <m.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="relative flex">
           <HeroMobileNft />
           <img src="/nft.avif" alt="" className={imgStyles.nft1} />
           <img src="/nft1.jpg" alt="" className={imgStyles.nft2} />
           <img src="/ape.webp" alt="" className={imgStyles.nft3} />
-        </div>
+        </m.div>
       </div>
     </div>
   );
