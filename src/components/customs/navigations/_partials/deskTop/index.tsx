@@ -7,7 +7,7 @@ const DeskTop = () => {
       <div className="flex items-center justify-between h-[100%] ">
         <h2 className="text-2xl orbitron">NFThub</h2>
 
-        <div className="flex items-center gap-4 font-bold">
+        <div className="flex items-center gap-4 font-bold border-[1px] border-slate-300 rounded-lg px-4 py-2">
           <a href="/">Home</a>
           <a href="/collection">Collection</a>
           <a href="/choose">Choose</a>
