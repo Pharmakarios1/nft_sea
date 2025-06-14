@@ -1,6 +1,6 @@
 const HowItWorks = () => {
   return (
-    <div className="w-full md:w-[80%] mx-auto mt-5">
+    <div className="w-full md:w-[90%] mx-auto mt-5">
       <h2 className="text-xl md:text-3xl text-center font-bold">
         How
         <span className="ml-2 text-transparent bg-clip-text bg-gradient-to-tr from-indigo-600 to-pink-500">
@@ -15,6 +15,9 @@ const HowItWorks = () => {
             className="w-full h-full rounded-3xl"
           />
           <div className="">
+            <span className="bg-indigo-600 w-5 h-5 flex justify-center items-center rounded-md text-white">
+              1
+            </span>
             <h1 className="md:text-start md:w-[200px] text-2xl">
               Set up and connect your wallet
             </h1>
@@ -38,12 +41,41 @@ const HowItWorks = () => {
             className="w-full h-full order-2 rounded-3xl"
           />
           <div className="">
+            <span className="bg-indigo-600 w-5 h-5 flex justify-center items-center rounded-md text-white">
+              2
+            </span>
             <h1 className="md:text-start md:w-[200px] text-2xl">
               Create your own Digital Collectible
             </h1>
             <p className="text-black/70 text-[16px] md:text-start font-light">
-              Use Trustwallet or Metamask to connect to multiple chains on the
-              app
+              Create your own digital collectible and mint it on the blockchain
+              of your choice
+            </p>
+            <p className="mt-5 text-black/70 text-[16px] md:text-start font-light">
+              {" "}
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit rem
+              voluptates, aperiam quis nisi eos sequi nesciunt, assumenda eum
+              impedit ullam fugiat animi. Sunt voluptatibus, officia itaque
+              quaerat explicabo quasi!
+            </p>
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-5 p-5  my-5 shadow-indigo-800  shadow-lg rounded-md">
+          <img
+            src="/mint.jpg"
+            alt=""
+            className="w-full h-full  rounded-3xl"
+          />
+          <div className="">
+            <span className="bg-indigo-600 w-5 h-5 flex justify-center items-center rounded-md text-white">
+              3
+            </span>
+            <h1 className="md:text-start md:w-[200px] text-2xl">
+              Mint your Digital Collectible
+            </h1>
+            <p className="text-black/70 text-[16px] md:text-start font-light">
+              Mint your digital collectible on the blockchain of your choice
+              and start trading it with others
             </p>
             <p className="mt-5 text-black/70 text-[16px] md:text-start font-light">
               {" "}

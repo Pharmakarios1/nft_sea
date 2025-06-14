@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { MdClose, MdMenu } from "react-icons/md";
 
 const MobileNav = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,7 +19,7 @@ const MobileNav = () => {
             onClick={toggleMenu}
             className="text-2xl text-transparent bg-clip-text cursor-pointer bg-gradient-to-tl from-indigo-700 to-pink-400 border-[1px] border-pink-300 rounded-lg px-2 py-1  transition duration-300"
           >
-            {isOpen ? "✖" : "☰"}
+            {isOpen ? <MdClose className="text-pink-500"/> : <MdMenu className="text-pink-500"/>}
           </button>
         </div>
       </div>
