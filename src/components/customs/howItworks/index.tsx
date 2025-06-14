@@ -8,8 +8,8 @@ const HowItWorks = () => {
             It Works
           </span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto place-items-center gap-16 md:gap-0 w-full p-5 my-5 shadow-pink-400 shadow-lg rounded-md">
-          <img src="/wallet.jpg" alt="" className="w-[80%] h-[80%]" />
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto place-items-center gap-10 md:gap-5 w-full p-5 my-5 shadow-pink-400 shadow-lg rounded-md">
+          <img src="/metamask.png" alt="" className="w-full h-full" />
           <div className="">
             <h1 className="md:text-start md:w-[200px] text-2xl">
               Set up and connect your wallet
@@ -27,7 +27,7 @@ const HowItWorks = () => {
             </p>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-16 md:gap-0 w-full p-5  my-5 shadow-indigo-400 shadow-lg rounded-md">
+        <div className="grid grid-cols-1 md:grid-cols-2 mx-auto gap-10 md:gap-5 w-full p-5  my-5 shadow-indigo-400 shadow-lg rounded-md">
           <img
             src="/digital.jpg"
             alt=""
