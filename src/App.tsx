@@ -9,6 +9,7 @@ import Sponsors from "./components/customs/sponsors";
 import WhyChooseUs from "./components/customs/whyChooseUs";
 import PerformanceStats from "./components/customs/PerformanceStats";
 import HowItWorks from "./components/customs/howItworks";
+import CallToAction from "./components/customs/callToAction";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <WhyChooseUs />
         <PerformanceStats />
         <HowItWorks />
+        <CallToAction />
       </motion.div>
     </LazyMotion>
   );
